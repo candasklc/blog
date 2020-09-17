@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+html{
+    scroll-behavior: smooth;
+    background-color: rgb(24, 24, 24);
+    color: cornsilk;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+body{
+    margin: 0;
+}
+.container{
+    padding: 0;
+    margin: 0;
+}
+.logo-and-menu{
+    position: fixed;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: transparent;
+    
+    
+}
+/*----------------MENU---------------*/
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: rgb(177, 123, 87);
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding:0;
+    border: none;
+    transition: 0.3s;
+  }
+  
+  .openbtn:hover {
+    color: rgb(177, 123, 87);
+    font-size: 2.2em;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 0;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+/*----------------/MENU---------------*/
+
+
+/*----------------Welcome Section---------------*/
+
+.welcome-section{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/jay-mantri-TFyi0QOx08c-unsplash.jpg);
+    background-size: cover;
+    text-align: center;   
+
+}
+
+h1{
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+    
+}
+h2{
+    opacity: 65%;
+}
+.profile-pic{
+    border-radius: 50%;
+    opacity: 65%;
+    transition: 0.3s
+}
+.profile-pic:hover{
+    border-radius: 40%;
+    opacity: 80%;
+}
+
+/*----------------/Welcome Section---------------*/
+
+
+
+
+
+/*----------------Blog Section---------------*/
+
+.blog-section{
+    width: 100%;
+    height: 100vh;
+    text-align: center;   
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(224, 216, 200);
+}
+/*----------------/Blog Section---------------*/
+
+
+
+
+
+
+
+/*----------------Footer---------------*/
+footer{
+    background-color: rgb(24, 24, 24);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+footer > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-list{
+    list-style: none;
+    display: flex;
+}
+
+.social-logos{
+    width: 50%;
+    border-bottom: solid transparent 1px;
+    transition: 0.2s;
+}
+.social-logos:hover{
+    border-bottom: solid white 1px;
+
+}
+
+.copyright > p{
+    text-align: center;
+}
+
+
+/*----------------/Footer---------------*/
