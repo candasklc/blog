@@ -101,8 +101,8 @@ body{
 
 h1{
     font-size: 4em;
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    padding-top: 2em;
     
 }
 h2{
@@ -115,7 +115,7 @@ h2{
 }
 .profile-pic:hover{
     border-radius: 40%;
-    opacity: 80%;
+    opacity: 85%;
 }
 
 /*----------------/Welcome Section---------------*/
@@ -129,10 +129,30 @@ h2{
 .blog-section{
     width: 100%;
     height: 100vh;
+    display: flex;
     text-align: center;   
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: rgb(224, 216, 200);
+    background-color: rgb(196, 184, 161);
+    justify-content: center;
 }
+.daily-cards{
+    background-color: rgb(24, 24, 24);
+    max-width: 100%;
+    margin: .5em;
+    
+}
+article{
+    display: flex;
+    flex-direction: column;
+     
+    border-radius: 5%;
+    transition: 2s;
+
+}
+article:hover{
+    background-color: rgba(31, 31, 31, 0.664);
+}
+
 /*----------------/Blog Section---------------*/
 
 
