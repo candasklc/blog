@@ -81,9 +81,10 @@ body{
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 600px) {
+  @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+    .blog-articles{max-width: 100%;}
   }
 /*----------------/MENU---------------*/
 
@@ -140,7 +141,7 @@ h2{
 .blog-articles{
     background-color: #5a5a5a; 
     border: solid 1.2px whitesmoke;
-    width: 70%;
+    width: 80%;
     margin-top: 1em;
     margin-bottom: 1em;
     border-radius: 10px;
