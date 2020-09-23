@@ -47,7 +47,7 @@ body{
   }
   
   .sidebar a:hover {
-    color: rgb(177, 123, 87);
+    color: rgb(221, 221, 221);
   }
   
   .sidebar .closebtn {
@@ -71,8 +71,8 @@ body{
   }
   
   .openbtn:hover {
-    color: rgb(177, 123, 87);
-    font-size: 2.2em;
+    color: rgb(20, 20, 20);
+    font-size: 2em;
   }
   
   #main {
@@ -95,14 +95,18 @@ body{
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/jay-mantri-TFyi0QOx08c-unsplash.jpg);
     background-size: cover;
-    text-align: center;   
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 
 }
 
 h1{
     font-size: 4em;
-    margin-top: 0;
-    padding-top: 2em;
+    margin: 0;
+    padding: 0;
     
 }
 h2{
@@ -115,7 +119,7 @@ h2{
 }
 .profile-pic:hover{
     border-radius: 40%;
-    opacity: 85%;
+    opacity: 80%;
 }
 
 /*----------------/Welcome Section---------------*/
@@ -128,31 +132,36 @@ h2{
 
 .blog-section{
     width: 100%;
-    height: 100vh;
-    display: flex;
-    text-align: center;   
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: rgb(196, 184, 161);
-    justify-content: center;
-}
-.daily-cards{
-    background-color: rgb(24, 24, 24);
-    max-width: 100%;
-    margin: .5em;
-    
-}
-article{
+    height: 100vh; 
+    background-color: rgba(216, 216, 216, 0.829);
     display: flex;
     flex-direction: column;
-     
-    border-radius: 5%;
-    transition: 2s;
-
+    align-items: center;
 }
-article:hover{
-    background-color: rgba(31, 31, 31, 0.664);
+.blog-articles{
+    background-color: #5a5a5a; 
+
+    max-width: 70%;
+    max-height: 45vh;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+}
+.blog-lists{
+    text-align: left;
+}
+article > h3{
+    text-align: center;
+    font-size: 1.6em;
+}
+article > ul{
+   
+    margin: 1em;
 }
 
+article > li{
+    font-size: .4em;
+}
 /*----------------/Blog Section---------------*/
 
 
