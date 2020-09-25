@@ -1,17 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 header{
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images\artem-sapegin-e2uTOpgW5Ec-unsplash.jpg);
-    background-size: cover;
+    z-index: 1;
+    position: fixed;
+}
+
+.header-texts{
     text-align: center;
     color: aliceblue;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.226),rgba(0, 0, 0, 0.226)), url(images/artem-sapegin-e2uTOpgW5Ec-unsplash.jpg);
+    background-size: cover;
+
 }
-body{
-    margin: 0;
-    padding: 0;
+h1{
+    font-size: 3em;
+    font-weight: 100;
 }
+h2{
+    font-size: 2em;
+    font-weight: 100;
+    opacity: 60%;
+}
+
+/*----------------------SIDE BAR-----------------------------*/
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: rgb(221, 221, 221);
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding:0;
+    border: none;
+    transition: 0.3s;
+  }
+  
+  .openbtn:hover {
+    color: rgb(20, 20, 20);
+    font-size: 2em;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 0;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    .blog-articles{max-width: 100%;}
+  }
+/*----------------------END SIDE BAR-----------------------------*/
