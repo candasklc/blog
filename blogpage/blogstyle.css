@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-
+html{
+  color: aliceblue;
+  scroll-behavior: smooth;
+}
 body{
+    background-color: rgba(202, 202, 202, 0.562);
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: auto;
 }
 header{
     z-index: 1;
@@ -19,7 +25,7 @@ header{
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.226),rgba(0, 0, 0, 0.226)), url(images/artem-sapegin-e2uTOpgW5Ec-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.226),rgba(0, 0, 0, 0.226)), url(../images/artem-sapegin-e2uTOpgW5Ec-unsplash.jpg);
     background-size: cover;
 
 }
@@ -38,7 +44,6 @@ h2{
     height: 100%;
     width: 0;
     position: fixed;
-    
     top: 0;
     left: 0;
     background-color: #111;
@@ -84,7 +89,9 @@ h2{
   .openbtn:hover {
     color: rgb(20, 20, 20);
     font-size: 2em;
+   
   }
+  
   
   #main {
     transition: margin-left .5s;
@@ -98,3 +105,87 @@ h2{
     .blog-articles{max-width: 100%;}
   }
 /*----------------------END SIDE BAR-----------------------------*/
+
+
+
+
+/*----------------------BLOG SECTION-----------------------------*/
+hr{
+  border-color: blanchedalmond;
+  width: 80%;
+}
+
+.blog-section{
+  color: #111;
+  display: grid;
+}
+.blog-articles{
+  width: 80%;
+  justify-self: center;
+  font-size: 1.5em;
+  transition: 0.3s;
+
+}
+.blog-articles:hover{
+  border-radius: 10px;
+  box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+  width: 83%;
+}
+li{
+  margin-top: 0.2em;
+  padding-right: 0.9em;
+}
+h3{
+  text-align: center;
+}
+
+section a{
+  text-decoration: none;
+  color: #000000;
+}
+section a:hover{
+  text-decoration: underline;
+  color: aliceblue;
+}
+
+
+
+
+/*----------------------END OF BLOG SECTION-----------------------------*/
+
+
+
+
+/*----------------Footer---------------*/
+footer{
+  background-color: rgb(24, 24, 24);
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+footer > div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-list{
+  list-style: none;
+  display: flex;
+}
+
+.social-logos{
+  width: 50%;
+  border-bottom: solid transparent 1px;
+  transition: 0.2s;
+}
+.social-logos:hover{
+  box-shadow: 0px 82px 68px 5px rgba(255,255,255,1);
+}
+.copyright > p{
+  text-align: center;
+}
+
+
+/*----------------/Footer---------------*/
