@@ -1,100 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
-    <title>New Layout for My Blog</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <title>Learning Blog of Candas</title>    
 </head>
 <body>
-    <div class="container">
-       
-        <header class="logo-and-menu">
-        
-        <div id="mySidebar" class="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="#home">Home</a>
-                <a href="blogpage/blogindex.html">Blog</a>
-                <a target="_blank" href="CV/CV_CandasKilic.docx.pdf">CV</a>
-                <a href="#contact">Contact</a>
-              </div>
-              
-              <div id="main">
-                <button class="openbtn" onclick="openNav()">☰
-                </button>  
-              </div>
-              
-         </header>
-
-        <section  id="home" class="welcome-section">
-
-            <div>
-                <img class="profile-pic" src="images/20190318_1814392.jpg" alt="profile picture" height="190px" width="190px">
-            </div>
-            
-            <p>
-                <h1>Hi there, this is Candas.</h1>
-                <h2>I share my experience as a PowerCoder.</h2>
-            </p>
-                    
-         </section>
-
- <!--******************************** END OF WELCOME SECTION  ******************************************-->       
-
-        <section id="" class="">
-
-        </section>
-
-        
-
-    </div>
- <!--******************************** JAVASCRIPT ******************************************-->       
-    
-    <script>
-        function openNav() {
-          document.getElementById("mySidebar").style.width = "200px";
-          document.getElementById("main").style.marginLeft = "200px";
-        }
-        
-        function closeNav() {
-          document.getElementById("mySidebar").style.width = "0";
-          document.getElementById("main").style.marginLeft= "0";
-        }
-        </script>
-    <!--******************************** END OF JAVASCRIPT ******************************************-->       
-        
-</body>
-
-
-<footer id="contact">
-    <div>
-
-        <ul class="footer-list">
+        <ul class="navbar">
             <li>
-                <a target="_blank" href="https://twitter.com/candasklc"><img class="social-logos" src="images/twitter.png" alt="twitter"></a>
+                <a class="navbar-links" href="#home">Home</a>
             </li>
-            
             <li>
-                <a target="_blank" href="https://www.linkedin.com/in/candas-kilic/"><img class="social-logos" src="images/linkedin.png" alt="linked-in"></a>
+                <a class="navbar-links" target="blank" class="links" href="CV/Candas_Kilic_Front_end_Web-Entwickler.pdf">CV</a>
             </li>
-
             <li>
-                <a target="_blank" href="https://github.com/candasklc"><img class="social-logos" src="images/github.png" alt="github"></a>
+                <a class="navbar-links" href="#contact">Contact</a>
             </li>
-            
-            
+           
         </ul>
+    
+    <section class="container"> 
         
-    </div>  
+          
+        <section class="titels">
+            <h1 class="welcome" id="home">Hi there my name is Candas!</h1>
+            <h2 class="before-arrow welcome">I share my experience as a Powercoder.</h2>
+            
+            <hr class="before-logo">
+            
+            <a target="blank" href="https://powercoders.org">
+                <img class="powercoders-logo" src="images/powercoders-meta.png" alt="logo">
+            </a>
+        </section>
+        <a href="#first-day">
+            <img class="arrow" src="images/down-arrow.png" alt="arrow">
+        </a>
+       
+        <hr class="before-days" id="first-day"> <!--Arrow linkes here.-->
 
-    <div class="copyright">
-        <p>
-            © 2020 Candas Kilic All Rights Reserved
-        </p>
-    </div>
+            <article class="days" >
+                <h3><time datetime="2020-08-10">10.08.2020</time> - Reading and setting up.</h3>
+                <ul>
+                    <li>Setting up workspace.</li>
+                    <li>Understanding Github and read about it.</li>
+                    <li>Trying to publish my blog and add <a class="body-links" href="https://jekyllrb.com">Jekyll</a> to it but didn't work.</li>
+                </ul>
+            </article>
 
-</footer>
+
+            <article class="days"> 
+                <h3><time>11.08.2020</time> - Learning and setting up.</h3>
+                <ul>
+                    <li>Publish my blog and add Jekyll to it but did't work again.</li>
+                    <li>Set up Github on desktop and tried with the guide of a video.</li>
+                    <li>Decided to write my own code.</li>
+                    
+                    <div class="day-images">
+                        <img class="body images" src="images/jekyll.png" alt="Jekyll">
+                    </div>
 
 
-</html>
+                </ul>
+            </article>
+        
+            <article class="days">
+                <h3><time>12.08.2020</time>- Trying to improve.</h3>
+                <ul>
+                    <li>Installed Ruby and Jekyll successfully.</li>
+                    <li>Today I have 2 Blogs one is published on github, one is on myserver.</li>
+                    <li>Decided to write my new own code again from zero.</li>
+                    <li>Some how Blog posts didn't work and didn't look how I wanted, so I cancelled post page.</li>
+                    <li>Posts will be on the main page and I will update daily.</li>
+                    <li>I've learnt today I shouldn't blame myself for every not working code, if something is wrong just take a break and let internet work. Sometimes publishing and updating pages take longer time than I expected.</li>
+                    <div class="day-images">
+                        <div>
+                            <img src="images/ruby.png" alt="ruby">
+                        </div>
+                        <div>
+                            <img src="images/jekyllv.png" alt="jekyllv">
+                        </div>
+                    </div>
+                </ul>
+            </article>
+
+         <article class="days"> 
+             <h3><time>13.08.2020 & 14.08.2020</time> - Coding on desktop.</h3>
+             <ul>
+                <li>The blog does not look good to me, so I decided to add css codes.</li>
+                <li>As I expected I have some problems with my div elements but solved.</li>
+                <li>I worked on fonts and applied custom font.</li>
+                <li>I've spent a lot of time on making css elements in order.</li>
+            </ul>
+         </article>
+
+         <article class="days"> 
+            <h3><time>15.08.2020 & 16.08.2020</time> - Adding some css codes to my blog.</h3>
+            <ul>
+               <li>I had some problem with footer icons and solved.</li>
+                <li>Wrote some css codes and read a lot problem solving on <a class="body-links" href="https://stackoverflow.com"> stack overflow</a>.</li>
+               <li>I am done with css for now.</li>
+               <li>I've checked some free pictures and icons websites.</li>
+
+           </ul>
+         </article>
+
+        <article class="days" id="vsc"> 
+            <h3><time>17.08.2020</time> - Cv preparation.</h3>
+            <ul>
+               <li>Completed my Cv and submitted.</li>
+               <li>Organised my folders that are in the code.</li>
+           </ul>
+           <div class="day-images">
+               <div>
+                   <img src="images/vsc.png" alt="vsc">
+                </div>
+                <div>
+                    <img src="images/resume.png" alt="resume">
+                </div>
+            </div>
+        </article>
+
+        <article class="days" id="vsc"> 
+            <h3><time>18.08.2020</time> - Typing and English training.</h3>
+            <ul>
+               <li>I've checked <a target="blank" class="body-links" href="https://www.typing.com">typing.com</a> to learn how to write faster.</li>
+               <li>Whatced a movie with english subtitles.</li>
+               <li>Coursera was down, so I've read more about Html tags on other websites.</li>
+           </ul>
+           <div class="day-images">
+               <div>
+                   <img src="images/typing.png" alt="typing">
+                </div>
+                <div>
+                    <img src="images/courseradown.png" alt="coursera">
+                </div>
+            </div>
+        </article>
+        
+        <article class="days" id="vsc"> 
+            <h3><time>19.08.2020 & 20.08.2020</time> - Completing HTML course in linkedin.</h3>
+            <ul>
+               <li>Started and finished HTML course in linkedin.</li>
+               <li>I've learnt more about elements and attributes.</li>
+               <li>I am so impressed by subtitels power of HTML.</li>
+               <li>I will use <code>< article > </code>element more often.</li>
+               <li>And I will try to not wrap everything with <code>< div > </code>element.</li>
+           </ul>
+           <div class="day-images">
+               <div>
+                   <img src="images/article-element.png" alt="article-element">
+                </div>
+                <div>
+                    <img src="images/html-certificate.png" alt="certificate">
+                </div>
+
+            </div>
+        </article>
+
+        <article class="days" id="vsc"> 
+            <h3><time>21.08.2020</time> - Checking some good websites.</h3>
+            <ul>
+               <li>On twitter I follow many developers and check their profiles and suggestions about codding.</li>
+               <li>Found great portfolio of <a target="blank" class="body-links" href="https://bruno-simon.com">Bruno Simon</a> and I would like to share with you as well.</li>
+               <li>I inspect interesting websites to learn better way to use HTML and CSS.</li>
+           </ul>
+           <div class="day-images">
+               <div>
+                   <img src="images/brunos-portfolio.png" alt="brunos-portfolio">
+                </div>
+                <div>
+                    <img src="images/brunos-page-title.png" alt="page-title">
+                </div>
+
+            </div>
+        </article>
+
+        <article class="days" id="vsc"> 
+            <h3><time>22.08.2020</time> - Learning more with Coursera.</h3>
+            <ul>
+               <li>Today I started with the course in Coursera.</li>
+           </ul>
+           <div class="day-images">
+                   <img src="images/coursera.png" alt="coursera">
+            </div>
+        </article>
+
+        <article class="days" id="vsc"> 
+            <h3><time>23.08.2020</time> - Continue with Coursera.</h3>
+            <ul>
+               <li>Yaakov Chaikin explained well many emty space in my knowlage of HTML.</li>
+               <li>I've completed HTML course.</li>
+            </ul>
+           <div class="day-images">
+                   <img src="images/html-intro.png" alt="html intro">
+                </div>
+        </article>
+                
+
+
+        <article class="days" id="vsc"> 
+            <h3><time>24.08.2020 & 25.08.2020</time> - Starting CSS course.</h3>
+            <ul>
+               <li>I've started to learn more about CSS.</li>
+               <li>Almost finished the CSS course.</li>
+            </ul>
+           <div class="day-images">
+                   <img src="images/intro-css.png" alt="css intro">
+                </div>
+        </article>
+
+        <article class="days" id="vsc"> 
+            <h3><time>30.08.2020</time> - Finished CSS and continue with front end libraries. </h3>
+            <ul>
+               <li>CSS is finished.</li>
+               <li>On 27th August I've started with front end libraries.</li>
+               <li>Until React they were not so challenging but at the moment for me React is.</li>
+            </ul>
+           <div class="day-images">
+                   <img src="images/fcc.png" alt="fcc">
+                </div>
+        </article>
+
+        <article class="days" id="vsc"> 
+            <h3><time>31.08.2020</time> - Completing CV</h3>
+            <ul>
+               <li>I've completend my CV and submitted.</li>
+               <li>Gave feedback to preperation weeks.</li>
+            </ul>
+        </article>
+
+        <article class="days" id="vsc"> 
+            <h3><time>07.09.2020-11.09.2020</time> - First week of bootcamp.</h3>
+            <ul>
+               <li>First week was focussed on warming-up and CLI.</li>
+               <li>We started better than I expected. On first day we got used to each other therefore environment was much warmer and comfortable.</li>
+               <li>I was volunteer for hosting for the first week and that made me get used to easily the building, to the stuff we have there and to the people.</li>
+               <li>On the IT field I have learnt that CLI is very important and it's something that i must get used to use everyday.</li>
+               <li>In the beginning CLI was complicated but with help of Konstantin we managed to make a game to improve our skills.</li>
+            </ul>
+        </article>
+
+        <article class="days" id="vsc"> 
+            <h3><time>14.09.2020-20.09.2020</time> - Second week of bootcamp.</h3>
+            <ul>
+               <li>We started with HTML and CSS.</li>
+               <li>I have been learning HTML and CSS since few months but in one week maybe I can say that I doubled my knowlage.</li>
+               <li>I choosed a template and codded HTML and CSS to make a blog that looks like the template.</li>
+               <li>I have been working on my Blogs in this week and also I have learnt a lot about how to write summary and how to update my resume to make it more interesting.</li>
+               <li>I updated my summary on my linked profile and in my resume.</li>
+            </ul>
+        </article>
+        
+    </section>
+
+
+    </body>
+
+
+    <footer id="contact">
+                
+
+        <div class="footer-links"> 
+               <a href="mailto:candas.kilic@powercoders.org"><img src="images/mail.png" alt="email"></a> 
+        </div>
+    
+    
+        <div class="footer-links">
+            <a target="blank" href="https://twitter.com/candasklc"><img  src="images/twitter.png" alt="twitter"></a>
+        </div>
+    
+        <div class="footer-links">
+            <a target="blank" href="https://github.com/candasklc"><img  src="images/github-image.png" alt="github"></a>
+        </div>
+    
+        <div class="footer-links">
+            <a target="blank" href="https://www.linkedin.com/in/candas-kilic-6a01101a9/"><img  src="images/linkedin.png" alt="linkedin"></a>
+        </div>
+    
+    
+    </footer>
+    </html>
+    
+
+
+    
+            
+ 

@@ -1,0 +1,154 @@
+html{
+    scroll-behavior: smooth;
+    color: rgba(250, 250, 250, 0.815);
+    font-family: 'Comfortaa', cursive;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+.welcome{
+    font-size: 3em;
+    text-align: center;
+    margin: 0 auto; 
+    padding-top: 2.5em;
+}
+h3{
+    font-size: 2.3em;
+    font-weight: bolder;
+    border-bottom:solid 1px;
+    text-align: center;
+}
+.navbar{
+    margin:0px auto;
+    padding:0;
+    background: linear-gradient(rgb(22, 22, 22), rgb(22, 22, 22));
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    width: 100%;
+    list-style: none;
+}
+
+.navbar .navbar-links{
+    margin: 0;    
+    color: rgba(255, 255, 255, 0.815);
+    text-decoration: none;  
+    
+    
+}
+    
+   .navbar .navbar-links:hover{
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+
+    }
+    
+    
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.685)), url(images/joshua-aragon-EaB4Ml7C7fE-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0;
+        
+    }
+    button{
+        max-width: 2%;
+        right: 10px;
+        bottom: 10px;
+        position: fixed;
+        background: transparent;
+    }
+    .container{
+        width: 100%;
+    }
+    .body-links{
+        text-decoration: underline;
+        color: rgba(250, 250, 250, 0.815);
+    }
+    .body-links:hover{
+        color: rgb(250, 250, 250);
+
+    }
+    .day-images{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1.5em;
+        margin: auto;
+    }
+    .day-images img{
+        max-width: 80%;
+    }
+    .before-logo{
+        margin-top: 13em;
+    }
+    .powercoders-logo{
+        display: flex;
+        margin: auto;
+        padding-top: 2em;
+        padding-bottom: .6em;
+        border-bottom: solid transparent 4px;
+    }
+    .powercoders-logo:hover{
+        border-bottom: solid rgb(179, 39, 62) 4px;
+    }
+    .before-arrow{
+        font-size: 1.7em;
+        margin-bottom: 3em;
+    }
+    .arrow{
+        display: block;
+        margin: auto;
+        width: 3%;
+    }
+    .arrow:hover{
+        filter: contrast(10%) blur(1px);
+    }
+    .before-days{
+        margin-top: 3em;
+        max-width: 80%;
+    }
+    
+    .days{
+        background-image: linear-gradient(rgba(78, 78, 78, 0.432), rgba(78, 78, 78, 0.432));
+        max-width: 80%;
+        margin: auto;
+
+    }
+  
+   .days ul{
+        margin: auto
+        
+    }
+   .days li{
+        font-size: 1.4em;
+        text-align: left;
+       padding-bottom: 0.5em;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+        border-top: 1px solid #d5d5d5;
+        font-size: 1.2em;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.26));   
+        margin-top: 2em;
+     }
+    .footer-links{
+        text-align: center;
+        max-height: 2em;
+    }
+     footer img{
+        margin: 1em;
+        max-width: 10%;
+        border-bottom: solid transparent 2px;
+    }
+    footer img:hover{
+        border-bottom: solid 2px;
+        filter: brightness(50%);
+        border-color: rgb(74, 134, 155);
+    }
+    
